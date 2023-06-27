@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+
+
+    <!-- navbar -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./sameer.jpeg" class="logo">
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#article">Article</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web developer</p>
+          <h1>Hi, I'm <span> Sameer </span> <br> Rai from Chandigarh, India </br> </h1>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- about section  -->
+    
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./image.jpg">
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am also a Web developer and I love designing and building web applications. Recently I started learning web development because it is one of the things in which i dont get bored even after long working hours. It makes me happy seeing the final outcome every time.
+              I am currently learning data structure and algorithm which basically contain lots of thinking problems and i love solving them using C/C++ also sometimes javascript.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick = "openTab('skills')">Skills</p>
+              <p class="tab-links" onclick = "openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li> <span>UI/UX</span> <br> Designing Web/App interfaces </li>
+                <li> <span>Web development</span> <br> Web development </li>
+                <li> <span>UI/UX</span> <br> Designing Web/App interfaces </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li> <span>2016</span> <br> High School from Kv Ghazipur</li>
+                <li> <span>2016-2018</span> <br> 10+2 from BSY </li>
+                <li> <span>2020-2024</span> <br> Btech from NIT Dgp </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- article -->
+
+    <div id="article">
+      <h1>Article</h1>
+      <h2> Machine Learning and Artificial Intelligence: Shaping the Future</h2>
+      <p>
+        The advancements in Machine Learning (ML) and Artificial Intelligence (AI) have revolutionized the way we perceive technology and its potential impact on our lives. These fields have rapidly evolved in recent years, demonstrating immense potential to transform various industries and improve the quality of human existence. In this blog, we will explore how ML and AI are shaping the future and delve into a practical example to showcase their transformative power.
+      </p>
+      <div class="more-content">
+        <h3>Understanding Machine Learning and Artificial Intelligence : </h3>
+        <p>Machine Learning is a subfield of AI that focuses on the development of algorithms and models that enable computers to learn and make predictions or decisions without being explicitly programmed. It enables machines to analyze large datasets, identify patterns, and make data-driven decisions. On the other hand, Artificial Intelligence encompasses a broader range of concepts, aiming to create intelligent systems capable of performing tasks that would typically require human intelligence.
+        </p> <br>
+        <h3>The Impact of ML and AI on the Future : </h3>
+        <ul>
+          <li> 
+            <h4>Automation and Labor Market : </h4>
+            <p>As ML and AI continue to advance, automation becomes increasingly prevalent in various industries. Repetitive and time-consuming tasks can now be efficiently handled by intelligent machines, allowing humans to focus on more complex and creative endeavors. While some jobs may be displaced by automation, new roles will emerge, requiring a different skill set. The future workforce will likely need to adapt and possess skills that complement and collaborate with AI systems</p>
+          </li>
+          <li> 
+            <h4>Healthcare :</h4>
+            <p>ML and AI have the potential to revolutionize the healthcare industry. By analyzing vast amounts of medical data, these technologies can assist in diagnosing diseases, predicting patient outcomes, and suggesting personalized treatment plans. AI-powered medical imaging systems can detect anomalies with high accuracy, aiding in early diagnosis and improving patient outcomes. Additionally, wearable devices and health monitors can leverage ML algorithms to provide real-time health monitoring and personalized recommendations.</p>
+          </li>
+        </ul>
+        <h3>Practical Example: Virtual Personal Assistants</h3>
+        <p>Virtual personal assistants, such as Amazon's Alexa, Apple's Siri, or Google Assistant, are practical examples of how ML and AI have transformed our daily lives. These voice-enabled AI systems can understand natural language, answer questions, perform tasks, and even control connected smart devices. They leverage ML algorithms to continuously learn from user interactions and improve their responses over time.
+        </p>
+        <p>Virtual personal assistants simplify our lives by providing information, setting reminders, playing music, managing calendars, and much more. They are also integrated into various smart home devices, allowing users to control lights, thermostats, and security systems using voice commands. The natural language processing capabilities of ML enable these assistants to understand context and intent, making interactions more seamless and human-like.</p>
+        <h3>Conclusion :</h3>
+        <p>Machine Learning and Artificial Intelligence have emerged as powerful tools shaping the future across numerous industries. From healthcare to transportation and personal assistants, their impact is visible in various aspects of our lives. As these technologies continue to advance, it is crucial to ensure their ethical development, prioritize data privacy, and foster collaboration between humans and intelligent systems. By harnessing the potential of ML and AI responsibly, we can create a future where technology augments human capabilities and enhances the overall well-being of society.</p>
+      </div>
+      <button class="btn btn2" id="read-more-btn" onclick="toggleContent()">Read More</button>
+    </div>
+
+
+
+    <!-- contact me -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fas fa-paper-plane"></i> sameerrai16050@gmail.com</p>
+            <p> <i class="fas fa-phone"></i> 8840450906</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/profile.php?id=100031467804021"> <i class="fab fa-facebook"></i> </a>
+              <a href="https://github.com/sameerrai1705"> <i class="fab fa-github"></i> </a>
+              <a href="https://www.instagram.com/sameer_rai_17/"> <i class="fab fa-instagram"></i> </a>
+              <a href="https://www.linkedin.com/in/sameer-rai-341043204"> <i class="fab fa-linkedin-in"></i> </a>
+            </div>
+            <a href="./Resume.pdf" download class="btn btn2">Download Cv</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" placeholder="Your Message" rows="6"></textarea>
+              <a href="mailto:sameerrai16050@email.com">
+                <button class="btn btn2" type="submit">Send</button>
+              </a>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js" defer></script>
+  </body>
+</html>
